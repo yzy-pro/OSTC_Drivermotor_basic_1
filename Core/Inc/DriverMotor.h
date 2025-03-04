@@ -19,7 +19,7 @@ typedef enum {
 
 #define ABS_MAX_SPEED 100
 #define SPEED1 60
-#define SPEED2 -60
+#define SPEED2 (-60)
 
 
 void motor_control (uint8_t name, int32_t speed);

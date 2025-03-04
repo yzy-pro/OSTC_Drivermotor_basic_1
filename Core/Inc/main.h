@@ -82,6 +82,11 @@ void Error_Handler(void);
 #define LF_EN_Pin GPIO_PIN_11
 #define LF_EN_GPIO_Port GPIOA
 
+#define RF_EN_CHANNEL TIM_CHANNEL_1
+#define RB_EN_CHANNEL TIM_CHANNEL_2
+#define LB_EN_CHANNEL TIM_CHANNEL_3
+#define LF_EN_CHANNEL TIM_CHANNEL_4
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

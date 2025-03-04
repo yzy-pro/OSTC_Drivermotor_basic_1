@@ -36,7 +36,7 @@ void motor_control (const uint8_t name, int32_t speed)
             HAL_GPIO_TogglePin(RF_IN2_GPIO_Port, RF_IN2_Pin);
             speed = -speed;
         }
-        __HAL_TIM_SetCompare(&htim1, RF_EN_Pin, speed);
+        __HAL_TIM_SetCompare(&htim1, RF_EN_CHANNEL, speed);
 
     }
     else if (name == RB_wheel)
@@ -56,7 +56,7 @@ void motor_control (const uint8_t name, int32_t speed)
             HAL_GPIO_TogglePin(RB_IN2_GPIO_Port, RB_IN2_Pin);
             speed = -speed;
         }
-        __HAL_TIM_SetCompare(&htim1, RB_EN_Pin, speed);
+        __HAL_TIM_SetCompare(&htim1, RB_EN_CHANNEL, speed);
 
     }
     else if (name == LB_wheel)
@@ -76,7 +76,7 @@ void motor_control (const uint8_t name, int32_t speed)
             HAL_GPIO_TogglePin(LB_IN2_GPIO_Port, LB_IN2_Pin);
             speed = -speed;
         }
-        __HAL_TIM_SetCompare(&htim1, LB_EN_Pin, speed);
+        __HAL_TIM_SetCompare(&htim1, LB_EN_CHANNEL, speed);
 
     }
     else if (name == LF_wheel)
@@ -96,7 +96,7 @@ void motor_control (const uint8_t name, int32_t speed)
             HAL_GPIO_TogglePin(LF_IN2_GPIO_Port, LF_IN2_Pin);
             speed = -speed;
         }
-        __HAL_TIM_SetCompare(&htim1, LF_EN_Pin, speed);
+        __HAL_TIM_SetCompare(&htim1, LF_EN_CHANNEL, speed);
     }
 }
 
